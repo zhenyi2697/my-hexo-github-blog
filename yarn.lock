@@ -149,10 +149,10 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
 basic-auth@~2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/basic-auth/-/basic-auth-2.0.0.tgz#015db3f353e02e56377755f962742e8981e7bbba"
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/basic-auth/-/basic-auth-2.0.1.tgz#b998279bf47ce38344b4f3cf916d4679bbf51e3a"
   dependencies:
-    safe-buffer "5.1.1"
+    safe-buffer "5.1.2"
 
 bcrypt-pbkdf@^1.0.0:
   version "1.0.1"
@@ -442,9 +442,13 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-depd@1.1.1, depd@~1.1.1:
+depd@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.1.tgz#5783b4e1c459f06fa5ca27f991f3d06e7a310359"
+
+depd@~1.1.1, depd@~1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
 destroy@~1.0.4:
   version "1.0.4"
@@ -492,9 +496,9 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-ejs@^2.3.4:
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.5.7.tgz#cc872c168880ae3c7189762fd5ffc00896c9518a"
+ejs@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-1.0.0.tgz#c9c60a48a46ee452fb32a71c317b95e5aa1fcb3d"
 
 encodeurl@~1.0.1:
   version "1.0.1"
@@ -822,11 +826,30 @@ hexo-cli@^1.0.2:
     object-assign "^4.1.0"
     tildify "^1.2.0"
 
+hexo-deployer-git@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/hexo-deployer-git/-/hexo-deployer-git-0.2.0.tgz#f0138a58ab35361f4c55906bb37a7a739d512fb0"
+  dependencies:
+    chalk "^1.1.3"
+    hexo-fs "^0.1.5"
+    hexo-util "^0.6.0"
+    moment "^2.13.0"
+    swig "^1.4.2"
+
 hexo-front-matter@^0.2.2:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/hexo-front-matter/-/hexo-front-matter-0.2.3.tgz#c7ca8ef420ea36bd85e8408a2e8c9bf49efa605e"
   dependencies:
     js-yaml "^3.6.1"
+
+hexo-fs@^0.1.5:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/hexo-fs/-/hexo-fs-0.1.6.tgz#f980ccc3bc79d0fb92eddbd887bc20a56500d03f"
+  dependencies:
+    bluebird "^3.4.0"
+    chokidar "^1.5.2"
+    escape-string-regexp "^1.0.5"
+    graceful-fs "^4.1.4"
 
 hexo-fs@^0.2.0:
   version "0.2.2"
@@ -884,16 +907,16 @@ hexo-pagination@0.0.2:
   dependencies:
     utils-merge "^1.0.0"
 
-hexo-renderer-ejs@^0.3.0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/hexo-renderer-ejs/-/hexo-renderer-ejs-0.3.1.tgz#c0c1a3757532d47e5b7d9dc908b5dfd98c94be2c"
+hexo-renderer-ejs@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/hexo-renderer-ejs/-/hexo-renderer-ejs-0.2.0.tgz#80771935a5cc71513f07c2c7c14f006220817ae0"
   dependencies:
-    ejs "^2.3.4"
+    ejs "^1.0.0"
     object-assign "^4.0.1"
 
-hexo-renderer-marked@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/hexo-renderer-marked/-/hexo-renderer-marked-0.3.0.tgz#5fa27a361075d148b8ecff29952a3e15e23aed81"
+hexo-renderer-marked@^0.2.10:
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/hexo-renderer-marked/-/hexo-renderer-marked-0.2.11.tgz#32fd3880d3c3979fd7b8015ec121a6c44ff49f84"
   dependencies:
     hexo-util "^0.6.0"
     marked "^0.3.5"
@@ -1323,13 +1346,17 @@ moment-timezone@^0.5.14:
   version "2.20.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
 
+moment@^2.13.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+
 morgan@^1.6.1:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/morgan/-/morgan-1.9.0.tgz#d01fa6c65859b76fcf31b3cb53a3821a311d8051"
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/morgan/-/morgan-1.9.1.tgz#0a8d16734a1d9afbc824b99df87e738e58e2da59"
   dependencies:
     basic-auth "~2.0.0"
     debug "2.6.9"
-    depd "~1.1.1"
+    depd "~1.1.2"
     on-finished "~2.3.0"
     on-headers "~1.0.1"
 
@@ -1465,8 +1492,8 @@ on-finished@~2.3.0:
     ee-first "1.1.1"
 
 on-headers@~1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/on-headers/-/on-headers-1.0.1.tgz#928f5d0f470d49342651ea6794b0857c100693f7"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/on-headers/-/on-headers-1.0.2.tgz#772b0ae6aaa525c399e489adfad90c403eb3c28f"
 
 once@^1.3.0, once@^1.3.3:
   version "1.4.0"
@@ -1729,6 +1756,10 @@ safe-buffer@5.1.1, safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@~5.1.0, s
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
+safe-buffer@5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
+
 safe-json-stringify@~1:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/safe-json-stringify/-/safe-json-stringify-1.0.4.tgz#81a098f447e4bbc3ff3312a243521bc060ef5911"
@@ -1909,7 +1940,7 @@ swig-extras@0.0.1:
   dependencies:
     markdown "~0.5.0"
 
-swig@1.4.2:
+swig@1.4.2, swig@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/swig/-/swig-1.4.2.tgz#4085ca0453369104b5d483e2841b39b7ae1aaba5"
   dependencies:
